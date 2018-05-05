@@ -1,0 +1,120 @@
+<view class="container">
+  <zan-panel title="{{notice.title}}">
+    <zan-noticebar
+      text="{{ notice.text }}"
+      color="#ff6e0e"
+      background-color="#fff
+      scrollable="{{ notice.scrollable }}"
+    />
+  </zan-panel>
+  <view class="cells">
+    <view class="cellItems">
+        <view class="iconfont icon-train"></view>
+        <view class="text">训练</view>
+    </view>
+     <view class="cellItems">
+        <view class="iconfont icon-vs"></view>
+        <view class="text">约战</view>
+    </view>
+    <view class="cellItems">
+        <view class="iconfont icon-team"></view>
+        <view class="text">球队</view>
+    </view>
+  </view>
+  <view class="game-plan">
+    <view class="page__bd">
+        <view class="weui-panel">
+            <view class="weui-panel__hd fire-font">比赛预告</view>
+            <view class="weui-panel__bd">
+            <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd">时间</view>
+                <view class="weui-cell__ft" style="font-size: 0">
+                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">2018-05-05 12:00-14:00</view>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd">地点</view>
+                <view class="weui-cell__ft" style="font-size: 0">
+                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">北京市工人俱乐部1号球场</view>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd">类型</view>
+                <view class="weui-cell__ft" style="font-size: 0">
+                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">训练（32人）</view>
+                </view>
+            </view>
+        
+        
+        
+            </view>
+        </view>            
+    </view>
+  </view>
+  <view class='myblock'>
+        <view class="weui-panel">
+            <view class="weui-panel__hd fire-font">比赛历史</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <view class="weui-cells weui-cells_show">
+                            <block>
+                                <view class="weui-cell weui-cell_access" bindtap="openAlert">
+                                    <view class="weui-cell__bd">2018-05-08 北京工人俱乐部</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </view>
+                                 <view class="weui-cell weui-cell_access" bindtap="openAlert">
+                                    <view class="weui-cell__bd">2018-04-02 陕西省体育场 </view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </view>
+                            </block>
+                </view>          
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+               <view class="weui-cells weui-cells_show">
+                            <block>
+                                <view class="weui-cell weui-cell_access" bindtap="openAlert">
+                                    <view class="weui-cell__bd">2018-05-08 奇虎vs网易</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </view>
+                                 <view class="weui-cell weui-cell_access" bindtap="openAlert">
+                                    <view class="weui-cell__bd">2018-04-02 奇虎vs腾讯 </view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </view>
+                            </block>
+                </view> 
+                </view>
+            </view>
+        </view>
+                </view>
+            </view>
+        </view>
+  </view> 
+  <view class="myblock">
+          <view class="weui-panel">
+            <view class="weui-panel__hd fire-font">赛场导航</view>
+            <view class="weui-panel__bd">
+              <view class='padding'>
+                <map
+                  style="width: 100%; height: 300px;"
+                  latitude="{{latitude}}"
+                  longitude="{{longitude}}"
+                  markers="{{markers}}"
+                  covers="{{covers}}"
+                  >
+                </map>
+              </view>
+            </view>
+          </view>  
+  </view>
+</view>

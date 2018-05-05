@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "zan-noticebar": "../../dist/noticebar/index",
+    "zan-panel": "../../dist/panel/index",
+    "doc-page": "../../components/doc-page/index",
+    "zan-tab": "../../dist/tab/index"
+  }
+}
