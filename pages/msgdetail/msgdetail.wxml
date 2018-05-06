@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Dear sir </view>
+        <view class="page__desc">详情请看小程序文档。</view>
+    </view>
+</view>

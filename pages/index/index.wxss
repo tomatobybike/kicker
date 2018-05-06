@@ -48,15 +48,15 @@ container {
   text-align: center;
 }
   .cellItems .iconfont {
-  font-size: 24px;
+  font-size: 40px;
   padding-top: 6px;
-  color: rgba(69, 90, 100, .8);
+  color: #1aad19;
   }
 
 
 .cellItems .text {
   color: #999;
-  font-size: 10px;
+  font-size: 14px;
   padding-bottom: 6px;
 }
 .page__bd{
@@ -76,4 +76,10 @@ container {
 }
 .weui-cell{
   text-align: left;
+}
+.weui-media-box-tomato{
+  padding: 0
+}
+.weui-navbar__item{
+  font-size:14px;
 }

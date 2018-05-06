@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "训练",
   "usingComponents": {
     "zan-noticebar": "../../dist/noticebar/index",
     "zan-panel": "../../dist/panel/index",

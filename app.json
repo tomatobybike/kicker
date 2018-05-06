@@ -4,6 +4,8 @@
     "pages/train/train",
     "pages/traininput/traininput",
     "pages/info/info",
+    "pages/msg/msg",
+    "pages/msgdetail/msgdetail",
     "pages/logs/logs"
   ],
   "window":{
@@ -31,13 +33,13 @@
         "text": "训练"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/index/index",
         "iconPath": "assets/image/vs.png",
         "selectedIconPath": "assets/image/vs-active.png",
         "text": "约战"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/msg/msg",
         "iconPath": "assets/image/msg.png",
         "selectedIconPath": "assets/image/msg-active.png",
         "text": "消息"
@@ -49,5 +51,6 @@
         "text": "关于"
       }
     ]
-  }
+  },
+  "debug": true
 }

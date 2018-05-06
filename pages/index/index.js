@@ -24,16 +24,6 @@ Page({
         longitude: 113.304520,
         iconPath: '/assets/image/location.png'
       }],
-      tab: {
-        list: [{
-          id: 1,
-          title: '训练'
-        }, {
-          id: 2,
-          title: '约战'
-        }],
-        selectedId: 1
-      },
       tabs: ["训练", "约战"],
       activeIndex: 0,
       sliderOffset: 0,

@@ -15,33 +15,47 @@
             </view>
             <view class="weui-tab__panel">
                 <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-                <view class="weui-cells weui-cells_show">
-                            <block>
-                                <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
-                                    <view class="weui-cell__bd">2018-05-08 北京工人俱乐部</view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                                 <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
-                                    <view class="weui-cell__bd">2018-04-02 陕西省体育场 </view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                            </block>
-                </view>          
+                    <view class="weui-cells weui-cells_show">
+                      <block>
+                          <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                              <view class="weui-cell__bd">2018-05-08 北京工人俱乐部</view>
+                              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                          </navigator>
+                            <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                              <view class="weui-cell__bd">2018-04-02 陕西省体育场 </view>
+                              <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                          </navigator>
+                      </block>
+                    </view>          
                 </view>
                 <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
-               <view class="weui-cells weui-cells_show">
-                            <block>
-                                <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
-                                    <view class="weui-cell__bd">2018-05-08 奇虎vs网易</view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                                 <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
-                                    <view class="weui-cell__bd">2018-04-02 奇虎vs腾讯 </view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                            </block>
-                </view> 
+                  <view class="weui-cells weui-cells_show">
+                        <block>
+                            <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                                <view class="weui-cell__bd">2018-05-08 奇虎vs网易</view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </navigator>
+                            <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                                <view class="weui-cell__bd">2018-04-02 奇虎vs腾讯 </view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </navigator>
+                        </block>
+                    </view> 
                 </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                  <view class="weui-cells weui-cells_show">
+                        <block>
+                            <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                                <view class="weui-cell__bd">2018-05-08 奇虎vs网易</view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </navigator>
+                            <navigator class="weui-cell weui-cell_access" url="/pages/info/info">
+                                <view class="weui-cell__bd">2018-04-02 奇虎vs腾讯 </view>
+                                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                            </navigator>
+                        </block>
+                    </view> 
+                </view>  
             </view>
         </view>
                 </view>

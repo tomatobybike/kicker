@@ -29,19 +29,19 @@
             <view class="weui-cell weui-cell_access">
                 <view class="weui-cell__bd">时间</view>
                 <view class="weui-cell__ft" style="font-size: 0">
-                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">2018-05-05 12:00-14:00</view>
+                    <view class="weui-cell-text" >2018-05-05 12:00-14:00</view>
                 </view>
             </view>
            <view class="weui-cell weui-cell_access">
                 <view class="weui-cell__bd">地点</view>
                 <view class="weui-cell__ft" style="font-size: 0">
-                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">北京市工人俱乐部1号球场</view>
+                    <view class="weui-cell-text">北京市工人俱乐部1号球场</view>
                 </view>
             </view>
            <view class="weui-cell weui-cell_access">
                 <view class="weui-cell__bd">类型</view>
                 <view class="weui-cell__ft" style="font-size: 0">
-                    <view style="display: inline-block;vertical-align:middle; font-size: 14px;">训练（32人）</view>
+                    <view class="weui-cell-text">训练（32人）</view>
                 </view>
             </view>
         
@@ -55,7 +55,7 @@
         <view class="weui-panel">
             <view class="weui-panel__hd fire-font">比赛历史</view>
             <view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box weui-media-box_text weui-media-box-tomato">
         <view class="weui-tab">
             <view class="weui-navbar">
                 <block wx:for="{{tabs}}" wx:key="*this">

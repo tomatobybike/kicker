@@ -1,34 +1,14 @@
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
-    <view class="page__bd">
+<view class="page">
+    <view class="weui-panel">
         <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
-        <view class="weui-cells__title fire-font">最新发布</view>
-        <view class="weui-form-preview__bd">
-            <view class="weui-form-preview__item">
-                <view class="weui-form-preview__label">日期</view>
-                <view class="weui-form-preview__value">2016-09-01</view>
-            </view>
-            <view class="weui-form-preview__item">
-                <view class="weui-form-preview__label">时间</view>
-                <view class="weui-form-preview__value">12:00-14:00</view>
-            </view>
-            <view class="weui-form-preview__item">
-                <view class="weui-form-preview__label">赛制</view>
-                <view class="weui-form-preview__value">10人</view>
-            </view>
-            <view class="weui-form-preview__item">
-                <view class="weui-form-preview__label">标题标题</view>
-                <view class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
-            </view>
-        </view>
+        <view class="weui-panel__hd fire-font">最新发布</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__hd">
                     <view class="weui-label">日期</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-                        <view class="weui-input">{{date}}</view>
-                    </picker>
+                    <view class="weui-input">{{date}}</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input">
@@ -36,9 +16,7 @@
                     <view class="weui-label">开始时间</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-                        <view class="weui-input">{{time}}</view>
-                    </picker>
+                    <view class="weui-input">{{time}}</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input">
@@ -46,9 +24,7 @@
                     <view class="weui-label">结束时间</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-                        <view class="weui-input">{{time}}</view>
-                    </picker>
+                    <view class="weui-input">{{time}}</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_select">
@@ -56,25 +32,23 @@
                     <view class="weui-label">赛制</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
-                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
-                    </picker>
+                    <view class="weui-input">{{countries[countryIndex]}}</view>
                 </view>
             </view>
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">是否分组</view>
-                <view class="weui-cell__ft">
-                    <switch checked />
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">是否分组</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="weui-input">是</view>
                 </view>
             </view>
-            <view class="weui-cell weui-cell_select">
-                <view class="weui-cell weui-cell_in-select-after">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd ">
                     <view class="weui-label">分组方式</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindGroupChange" value="{{groupIndex}}" range="{{groups}}">
-                        <view class="weui-select weui-select_in-select-after">{{groups[groupIndex]}}</view>
-                    </picker>
+                    <view class="weui-input">{{groups[groupIndex]}}</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input">
@@ -82,9 +56,7 @@
                     <view class="weui-label">截止报名日期</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-                        <view class="weui-input">{{date}}</view>
-                    </picker>
+                    <view class="weui-input">{{date}}</view>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input">
@@ -92,20 +64,21 @@
                     <view class="weui-label">截止报名时间</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-                        <view class="weui-input">{{time}}</view>
-                    </picker>
+                    <view class="weui-input">{{time}}</view>
                 </view>
             </view>
-                <view class="weui-cell weui-cell_input">
-                    <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="备注" />
-                    </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                  <view class="text-box"   style='padding:10px 0;'>
+                  <text>小程序是一种新的开放能力,可以在微信内被便捷地获取和传播,同时具有出色的使用体验。小程序开发者可在小程序内提供便捷、丰富的服务,如预订、
+                  </text>
+                  </view>
                 </view>
+            </view>
         </view>
 
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="showTopTips">发布</button>
+            <button class="weui-btn" type="primary" bindtap="showTopTips">报名</button>
         </view>
     </view>
 </view>
