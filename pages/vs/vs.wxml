@@ -1,0 +1,32 @@
+<!--about.wxml-->
+<view class="page">
+  <view class="container">
+    <view class="padding">
+      <view class="iconfont icon-vs"></view>
+    </view>
+    <view>卧榻之侧，岂容他人鼾睡，约战友邻</view>
+  </view>
+
+  <view>
+      <view class="kind-list">
+          <block wx:for="{{list}}" wx:key="id">
+              <view class="kind-list__item">
+                  <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                      <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+                          <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+                              <navigator url="{{page}}/{{page}}" class="weui-cell weui-cell_access">
+                                  <view class="weui-cell__hd">
+                                      <view class="iconfont icon-playing-team"></view>
+                                  </view>
+                                  <view class="weui-cell__bd">{{page}}</view>
+                                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                              </navigator>
+                          </block>
+                      </view>
+                  </view>
+              </view>
+          </block>
+      </view>
+  </view>
+
+</view>

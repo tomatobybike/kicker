@@ -1,6 +1,7 @@
 <view class="page">
     <view class="page__hd">
         <view class="page__title">Dear sir </view>
-        <view class="page__desc">详情请看小程序文档。</view>
+        <view class="page__desc">详情请看小程序文档。<br/>飒飒西风满院栽，蕊寒香冷蝶难来。
+他年我若为青帝，报与桃花一处开</view>
     </view>
 </view>

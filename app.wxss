@@ -155,6 +155,7 @@ form{
   border-bottom: 1rpx solid #eee;
   cursor: pointer;
   position:relative;
+  background: #fff;
 }
 .item-avatar-lg image{
   float: left;

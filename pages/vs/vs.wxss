@@ -1,0 +1,9 @@
+.icon-vs{
+  color:#1aad19;
+  font-size:30px;
+}
+.icon-playing-team{
+  color: #333;
+  font-size:16px;
+  margin-right: 6px;
+}
