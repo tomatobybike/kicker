@@ -71,5 +71,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  toVs: function () {
+    wx.navigateTo({
+      url: '/pages/letsvs/letsvs'
+    })
   }
 })

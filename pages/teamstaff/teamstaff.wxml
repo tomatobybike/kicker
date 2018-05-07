@@ -17,7 +17,7 @@
                 </view>
             </view>
             <view class="weui-btn-area">
-                <button class="weui-btn" type="primary">约战</button>
+                <button class="weui-btn" type="primary" bindtap="toVs">不服来战</button>
             </view>
         </view>
 </view>

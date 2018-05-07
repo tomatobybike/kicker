@@ -11,6 +11,7 @@
     "pages/intro/intro",
     "pages/team/team",
     "pages/teamstaff/teamstaff",
+    "pages/letsvs/letsvs",
     "pages/logs/logs"
   ],
   "window":{
