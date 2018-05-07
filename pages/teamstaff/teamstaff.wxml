@@ -1,0 +1,23 @@
+<view class="page">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">网易</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">球队介绍</view>
+                    <view class="weui-media-box__desc">巴塞罗那足球俱乐部（Fútbol Club Barcelona），简称巴萨（barça），是一家位于西班牙巴塞罗那市的足球俱乐部，西班牙足球甲级联赛传统豪门之一。1899年11月29日由瑞士人胡安·甘伯创立 [1]  。球队主场诺坎普球场可容纳接近十万名观众，是全欧洲最大及世界第二大的足球场。</view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">球队主力</view>
+                    <view class="staffs">
+                      <view class="staffs-list" wx:for="{{list}}" wx:for-item="member" wx:key="*this">
+                        <view class="staffs-avtar"><image src="/assets/wx/ben.png" class="img-circle" /></view>
+                        <view class="staffs-name">{{member.name}}</view>
+                      </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary">约战</button>
+            </view>
+        </view>
+</view>

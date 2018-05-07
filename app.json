@@ -10,6 +10,7 @@
     "pages/about/about",
     "pages/intro/intro",
     "pages/team/team",
+    "pages/teamstaff/teamstaff",
     "pages/logs/logs"
   ],
   "window":{

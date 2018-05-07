@@ -224,3 +224,6 @@ form{
     text-align: left;
     font-size: 14px;
 }
+.img-circle {
+    border-radius: 50% !important;
+}
